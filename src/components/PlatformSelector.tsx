@@ -27,7 +27,7 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
       return true;
     }
 
-    return normalizedTitle === normalizedQuery;
+    return normalizedTitle.startsWith(normalizedQuery);
   };
 
   const renderPlatform: ItemRenderer<Platform> = (
